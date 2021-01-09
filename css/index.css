@@ -618,6 +618,9 @@ body {
   opacity: 1;
   width: 100%; }
 
+.navigation__checkbox:not(:checked) ~ .navigation__nav {
+  display: none; }
+
 .navigation__icon {
   position: relative;
   margin-top: 3.5rem; }
