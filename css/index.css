@@ -371,6 +371,7 @@ body {
     float: left;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
+    overflow: hidden;
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
@@ -667,7 +668,8 @@ body {
   z-index: 1500;
   opacity: 0;
   width: 0;
-  transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  visibility: hidden; }
 
 .navigation__list {
   position: absolute;
@@ -706,10 +708,8 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
-
-.navigation__checkbox:not(:checked) ~ .navigation__nav {
-  visibility: hidden; }
+  width: 100%;
+  visibility: visible; }
 
 .navigation__icon {
   position: relative;
