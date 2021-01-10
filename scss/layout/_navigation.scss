@@ -102,7 +102,7 @@
     }
 
     &__checkbox:not(:checked) ~ &__nav {
-        display: none;
+        visibility: hidden;
     }
 
 
